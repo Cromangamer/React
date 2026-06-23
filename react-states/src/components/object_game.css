@@ -12,17 +12,22 @@
     padding: 10px;
     background-color: var(--ludo-black);
     border: 2px solid var(--ludo-white);
+    border-radius: 20px;
 }
 
 #blue-btn{
     background-color: var(--ludo-blue);
+    border-radius: 25%;
 }
 #green-btn{
     background-color: var(--ludo-green);
+    border-radius: 25%;
 }
 #red-btn{
     background-color: var(--ludo-red);
+    border-radius: 25%;
 }
 #yellow-btn{
     background-color: var(--ludo-yellow);
+    border-radius: 25%;
 }
