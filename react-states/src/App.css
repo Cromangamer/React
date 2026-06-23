@@ -1,0 +1,50 @@
+body{
+  margin: 0;
+  padding: 50px;
+}
+*{
+  padding: 10px;
+}
+#name{
+  width: 100%;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid #9379fc40;
+  padding: 10px;
+  margin: 10px 0;
+}
+#button{
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: #9379fc;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0px;
+}
+
+
+#post{
+  width: 500px;
+  border-radius: 5px;
+  border: 1px solid #9379fc40;
+  padding: 10px;
+}
+#likes{
+  padding: 0px;
+}
+#dislikes{
+  padding: 0px;
+}
+#comments{
+  padding: 0px;
+}
+#views{
+  padding: 0px;
+}
+#post-stats{
+  display: flex;
+  justify-content: space-between;
+}
