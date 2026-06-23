@@ -14,15 +14,19 @@ function initMoves() {
 export default function ObjectGame() {
   const [winner, setWinner] = useState(null);
   let [moves, setMoves] = useState(initMoves);
+  let [ arr, setArr ] = useState(["no moves"]);
 
   let updateMoves = (color) => {
     if (winner) return; // stop game after someone wins
 
+    setArr([...arr,`${color}` ])
+    console.log(arr)
+    
     setMoves((prev) => {
-      const newMoves = {
-        ...prev,
-        [color]: prev[color] + 1,
-      };
+        const newMoves = {
+            ...prev,
+            [color]: prev[color] + 1,
+        };
 
       if (newMoves[color] >= 100) {
         alert(`${color.toUpperCase()} wins! 🎉`);
@@ -38,6 +42,8 @@ export default function ObjectGame() {
     <div className="object-game">
       <h2>Object Game</h2>
       <div id="board">
+        {/* arr.at(-1) is pick array's lastest index */}
+        <p>Recent move : {arr.at(-1)} </p> 
         <div id="blue">
           <p>Blue Count : {moves.blue}</p>
           <button
