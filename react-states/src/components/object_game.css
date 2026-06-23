@@ -1,0 +1,28 @@
+:root {
+  --ludo-red: #E53935;
+  --ludo-green: #43A047;
+  --ludo-yellow: #FDD835;
+  --ludo-blue: #1E88E5;
+  --ludo-white: #FFFFFF;
+  --ludo-black: #212121;
+}
+
+.object-game{
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--ludo-black);
+    border: 2px solid var(--ludo-white);
+}
+
+#blue-btn{
+    background-color: var(--ludo-blue);
+}
+#green-btn{
+    background-color: var(--ludo-green);
+}
+#red-btn{
+    background-color: var(--ludo-red);
+}
+#yellow-btn{
+    background-color: var(--ludo-yellow);
+}
