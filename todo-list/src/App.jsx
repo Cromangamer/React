@@ -1,13 +1,14 @@
 import { useState } from 'react'
 
 import './App.css'
+import TodoList from './components/todo-layout'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
    <>
-    
+    <TodoList />
    </>
   )
 }
