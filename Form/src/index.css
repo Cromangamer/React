@@ -1,0 +1,106 @@
+/* ===========================================
+   Light Theme (Default)
+=========================================== */
+
+:root {
+  /* Brand */
+  --primary: #7C3AED;
+  --primary-hover: #6D28D9;
+  --secondary: #4F46E5;
+  --accent: #A855F7;
+
+  /* Gradient */
+  --gradient-primary: linear-gradient(135deg, #7C3AED, #4F46E5);
+  --gradient-accent: linear-gradient(135deg, #A855F7, #6366F1);
+
+  /* Backgrounds */
+  --bg: #F8FAFC;
+  --surface: #FFFFFF;
+  --surface-secondary: #F1F5F9;
+
+  /* Text */
+  --text: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #94A3B8;
+
+  /* Borders */
+  --border: #E2E8F0;
+
+  /* Status */
+  --success: #22C55E;
+  --warning: #F59E0B;
+  --danger: #EF4444;
+  --info: #3B82F6;
+
+  /* Effects */
+  --shadow: rgba(15, 23, 42, 0.08);
+  --glass: rgba(255, 255, 255, 0.65);
+  --blur: blur(14px);
+
+  /* Navbar */
+  --navbar: rgba(255, 255, 255, 0.75);
+
+  /* Button */
+  --button-text: #FFFFFF;
+
+  /* Animation */
+  --transition: 0.3s ease;
+}
+
+/* ===========================================
+   Dark Theme (System Preference)
+=========================================== */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+
+    /* Brand */
+    --primary: #8B5CF6;
+    --primary-hover: #A78BFA;
+    --secondary: #6366F1;
+    --accent: #C084FC;
+
+    /* Gradient */
+    --gradient-primary: linear-gradient(135deg, #8B5CF6, #6366F1);
+    --gradient-accent: linear-gradient(135deg, #C084FC, #7C3AED);
+
+    /* Backgrounds */
+    --bg: #0B1020;
+    --surface: #131A2A;
+    --surface-secondary: #1E293B;
+
+    /* Text */
+    --text: #F8FAFC;
+    --text-secondary: #CBD5E1;
+    --text-muted: #94A3B8;
+
+    /* Borders */
+    --border: #334155;
+
+    /* Status */
+    --success: #4ADE80;
+    --warning: #FBBF24;
+    --danger: #F87171;
+    --info: #60A5FA;
+
+    /* Effects */
+    --shadow: rgba(0, 0, 0, 0.45);
+    --glass: rgba(30, 41, 59, 0.55);
+    --blur: blur(14px);
+
+    /* Navbar */
+    --navbar: rgba(11, 16, 32, 0.75);
+
+    /* Button */
+    --button-text: #FFFFFF;
+  }
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
