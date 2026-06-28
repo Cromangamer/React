@@ -1,16 +1,23 @@
-import { useState } from 'react'
 import './App.css'
+import Ticket from './components/ticket'
 import From from './components/From'
 import Post from './components/post'
 import ObjectGame from './components/object_game'
-import Ticket from './components/ticket'
+
+function generateTicketNumbers(size) {
+  return Array.from({ length: size }, () => Math.floor(Math.random() * 1000))
+}
 
 function App() {
-  const [count, setCount] = useState(0)
+  let size = Math.floor(Math.random() * 100)
+  const ticketArray = generateTicketNumbers(size)
 
   return (
     <>
-      <Ticket array={[0,1,2,3,4,5,6,7,8,9,10]}/>
+      <From />
+      <Post />
+      <ObjectGame />
+      <Ticket array={ticketArray}/>
     </>
   )
 }

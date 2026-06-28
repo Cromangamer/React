@@ -1,7 +1,8 @@
+import "./ticiketNum.css"
 export default function Ticket({num}){
     return (
         <>
-            <div> {num} </div>
+            <div className="ticket-num"> {num} </div>
         </>
     )
 }
